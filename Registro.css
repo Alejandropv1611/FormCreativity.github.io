@@ -3,7 +3,7 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    background-color: #fef200; /* Amarillo mostaza */
+    background-color: #ECE31C; /* Amarillo mostaza */
 }
 
 .container {
@@ -13,8 +13,9 @@ body {
     max-width: 400px;
 }
 
-.container img {
-    max-width: 50%;
+.logo {
+    max-width: 100%;
+    padding-bottom: 25px;
 }
 
 .container p{
@@ -32,10 +33,10 @@ body {
     border-radius: 30px;
 }
 
-.blue-text {
-    color: #87CEEB; /* Azul cielo */
-    text-shadow: 2px 2px 4px #000;
-    font-size: 1.5em;
+.registrate {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 form {
@@ -64,7 +65,7 @@ input {
 }
 
 button {
-    background-color: #fef200;
+    background-color: #ECE31C;
     color: #fff;
     padding: 10px 20px;
     border: none;
