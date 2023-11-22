@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bienvenido.css">
+    <title>Isla de la Creatividad</title>
+</head>
+<body>
+    <div class="container">
+        <img src="/creativityArtboard-1.jpg" alt="Logo">
+        <p>Viernes a Domingo</p>
+        <p>2:00pm - 6:00pm</p>
+        <h1 class="welcome-text">BIENVENIDO A <br> LA ISLA DE <br>LA CREATIVIDAD</h1>
+        <p>Tómale captura a esta pantalla <br> y muestrasela al promotor <br> de la activación</p>
+        <div class="counter">000000</div>
+        <div class="arrow"></div>
+    </div>
+
+    <script src="confetti.js"></script>
+    <!-- Confetti  JS-->
+    <script>
+
+        // start
+
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+
+        //  Stop
+
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+        };
+
+        start();
+        stop();
+    </script>
+</body>
+</html>
