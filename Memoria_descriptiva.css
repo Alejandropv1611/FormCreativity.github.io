@@ -1,0 +1,51 @@
+/* Estilos generales */
+@font-face {
+    font-family: "Joy_For_Fun";
+    src: url(/Fonts/joy_for_fun/Joy_For_Fun.otf);
+}
+
+@font-face {
+    font-family: "Providence_Sans_Regular";
+    src: url(./Fonts/Providence_Sans_Regular/Providence_Sans_Regular.ttf);
+}
+
+@font-face {
+    font-family: "Gotham_Book_Font";
+    src: url(./Fonts/Gotham_Book_Font.otf);
+}
+
+
+
+body {
+    margin: 0;
+    background-color: #ECE31C;
+}
+
+.container {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #000000;
+    font-family: "Joy_For_Fun";
+    font-size: 37px;
+    margin: 5px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    text-align: left;
+    font-family: "Gotham_Book_Font";
+}
+
+p {
+    text-align: left;
+    font-family: "Gotham_Book_Font";
+    margin-top: 20px;
+    line-height: 20px;
+    font-size: 18px;
+}

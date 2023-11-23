@@ -17,7 +17,7 @@
 
 body {
     margin: 0;
-    background-color: #ECE31C; /* Amarillo mostaza */
+    background-color: #ECE31C; 
 }
 
 .container {
@@ -83,7 +83,7 @@ input {
 button {
     background-color: #ECE31C;
     color: #000000;
-    padding: 10px 35px;
+    padding: 5px 35px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -92,28 +92,60 @@ button {
 }
 
 button:hover {
-    background-color: #FFA500; /* Amarillo más oscuro al pasar el ratón */
+    background-color: #FFA500; 
 }
-
-/* Otros estilos ... */
 
 .checkbox-group {
     text-align: center;
     margin-top: 15px;
     display: flex;
-    flex-direction: column; /* Cambia la dirección del flex container a columna */
+    flex-direction: column; 
+}
+
+.checkbox-group a {
+    color: #000000;
+    font-family: "Gotham_Book_Font";
+    text-decoration: none;
+
+}
+
+.checkbox-group hr {
+    background-color: #000000;
+    margin-top: -12px;
+    height: 1px;
+    width: 20vh;
+    border: none;    
 }
 
 .checkbox-group label {
-    margin-bottom: 5px; /* Añade espacio entre el texto del label y el checkbox */
+    margin-bottom: 5px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: "Gotham_Book_Font";
 }
 
 .checkbox-group input {
     margin-right: 5px;
 }
 
+.activacion a {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: "Gotham_Book_Font";
+    color: #000000;
+    text-decoration: none;
+}
 
-/* Estilos para pantallas más pequeñas (ej. móviles) */
+.activacion hr {
+    background-color: #000000;
+    margin-top: -10px;
+    height: 1px;
+    width: 20vh;
+    border: none;
+}
+
 @media screen and (max-width: 600px) {
     .container,
     .form-container {

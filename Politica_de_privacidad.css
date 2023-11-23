@@ -1,0 +1,66 @@
+/* Estilos generales */
+@font-face {
+    font-family: "Joy_For_Fun";
+    src: url(/Fonts/joy_for_fun/Joy_For_Fun.otf);
+}
+
+@font-face {
+    font-family: "Providence_Sans_Regular";
+    src: url(./Fonts/Providence_Sans_Regular/Providence_Sans_Regular.ttf);
+}
+
+@font-face {
+    font-family: "Gotham_Book_Font";
+    src: url(./Fonts/Gotham_Book_Font.otf);
+}
+
+
+
+body {
+    margin: 0;
+    background-color: #ECE31C; /* Amarillo mostaza */
+}
+
+.container {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #000000; /* Rojo claro */
+    font-family: "Joy_For_Fun";
+    font-size: 37px;
+    padding-bottom: 25px;
+}
+
+h2 {
+    text-align: left;
+    font-family: "Gotham_Book_Font";
+}
+
+p {
+    text-align: left;
+    margin-top: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    font-family: "Gotham_Book_Font";
+}
+
+.btn {
+    background-color: #B22222; /* Rojo claro */
+    color: #fff;
+    padding: 10px 30px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Joy_For_Fun";
+    font-size: 25px;
+}
+
+.btn:hover {
+    background-color: #8B0000; /* Rojo más oscuro al pasar el ratón */
+}
