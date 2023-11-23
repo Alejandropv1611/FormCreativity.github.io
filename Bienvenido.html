@@ -14,12 +14,26 @@
         <img class="bienvenido_img" src="/img/titulo-2 1.png" alt="bienvenido">
         <p>Tómale captura a esta pantalla <br> y muestrasela al promotor  <br> de la activación</p>
         <div class="counter">000000</div>
-        <div class="flecha"><img src="/img/Flecha.png" alt="flecha"></div>
+        <div class="flecha">
+            <a href="https://tienda.faber-castell.com.pe/collections/juguetes-creativity-for-kids-regalos-sensorial-recreativos-motor-desarrollo">
+                <img src="/img/Flecha.png" alt="flecha">
+            </a>
+        </div>
     </div>
 
     <script src="confetti.js"></script>
     <!-- Confetti  JS-->
     <script>
+
+        // Obtener el número aleatorio de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const numeroAleatorio = urlParams.get('numero');
+
+        // Actualizar el contenido del div con el número aleatorio
+        const counterElement = document.querySelector('.counter');
+        if (counterElement) {
+            counterElement.textContent = numeroAleatorio || '000000';
+        }
 
         // start
 

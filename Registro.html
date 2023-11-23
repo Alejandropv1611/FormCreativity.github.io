@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Registro.css">
+    <link rel="stylesheet" href="css/registro.css">
     <title>Página de Registro</title>
 </head>
 <body>
@@ -31,19 +31,23 @@
             <button type="submit">¡Listo!</button>
         </form>
     </div>
+
+
     <div class="checkbox-group">
         <p><a href="/Politica_de_privacidad.html">Leer Política de Privacidad</a></p>
-        <hr>
-        <label>
-            <input type="checkbox" id="acepto" name="acepto" required> Acepto la política de privacidad
-        </label>
+        <div class="container-checkbox">
+            <input type="checkbox" id="acepto" name="acepto" class="estilo-especial">
+            <label for="acepto">Acepto los términos y condiciones</label>
+        </div>
     </div>
+
+    <br>
     <div class="activacion">
         <p><a href="/Memoria_descriptiva.html">Leer Descripción de la Activación</a></p>
         <hr>
     </div>
     
-    <script src="Registro.js"></script>
+    <script src="js/Registro.js"></script>
 
 </body> 
 </html>
