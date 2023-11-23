@@ -10,8 +10,7 @@ function validarFormulario() {
         return false;
     }
     
-    window.location.href = "http://127.0.0.1:3000/Bienvenido.html";
-
+    location.href = "/Bienvenido.html";
     return true;
 
 }

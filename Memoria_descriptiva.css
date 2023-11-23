@@ -49,3 +49,19 @@ p {
     line-height: 20px;
     font-size: 18px;
 }
+
+button {
+    background-color: #B22222; 
+    color: #fff;
+    padding: 10px 30px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Joy_For_Fun";
+    font-size: 25px;
+}
+
+button:hover {
+    background-color: #8B0000; 
+}

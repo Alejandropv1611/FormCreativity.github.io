@@ -49,7 +49,7 @@ p {
     font-family: "Gotham_Book_Font";
 }
 
-.btn {
+button {
     background-color: #B22222; /* Rojo claro */
     color: #fff;
     padding: 10px 30px;
@@ -61,6 +61,6 @@ p {
     font-size: 25px;
 }
 
-.btn:hover {
+button:hover {
     background-color: #8B0000; /* Rojo más oscuro al pasar el ratón */
 }
