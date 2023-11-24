@@ -154,6 +154,8 @@ button:hover {
 
 input[type="checkbox"]{
     width: 1%;
+    transform: scale(1.5); /* Ajusta el tamaño según tus necesidades */
+    margin-right: 2px
 
 }
 .container-checkbox{
@@ -168,7 +170,7 @@ input[type="checkbox"]{
     text-align: left; /* Alinear el texto a la izquierda para que esté alineado con el checkbox */
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .container,
     .form-container {
         max-width: 100%;
@@ -181,5 +183,19 @@ input[type="checkbox"]{
     .logo {
         max-width: 40%;
         padding-bottom: 5px;
+    }
+    input[type="checkbox"]{
+        width: 3%;
+        transform: scale(2); /* Ajusta el tamaño según tus necesidades */
+        margin-right: 5px
+    
+    }
+    .form-container {
+        text-align: center;
+        margin: 10px 10px;
+        padding: 20px;
+        max-width: 325px;
+        background-color: white;
+        border-radius: 30px;
     }
 }

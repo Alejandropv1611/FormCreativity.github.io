@@ -1,17 +1,17 @@
 /* Estilos generales */
 @font-face {
     font-family: "Joy_For_Fun";
-    src: url(/Fonts/joy_for_fun/Joy_For_Fun.otf);
+    src: url(../Fonts/joy_for_fun/Joy_For_Fun.otf);
 }
 
 @font-face {
     font-family: "Providence_Sans_Regular";
-    src: url(./Fonts/Providence_Sans_Regular/Providence_Sans_Regular.ttf);
+    src: url(../Fonts/Providence_Sans_Regular/Providence_Sans_Regular.ttf);
 }
 
 @font-face {
     font-family: "Gotham_Book_Font";
-    src: url(./Fonts/Gotham_Book_Font.otf);
+    src: url(../Fonts/Gotham_Book_Font.otf);
 }
 
 

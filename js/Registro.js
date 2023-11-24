@@ -23,7 +23,7 @@ function validarFormulario(event) {
     // Añadir el número aleatorio al formulario
     const numeroAleatorioInput = document.createElement('input');
     numeroAleatorioInput.type = 'hidden';
-    numeroAleatorioInput.name = 'Codigo';
+    numeroAleatorioInput.name = 'codigo';
     numeroAleatorioInput.value = numeroAleatorio;
     form.appendChild(numeroAleatorioInput);
 
