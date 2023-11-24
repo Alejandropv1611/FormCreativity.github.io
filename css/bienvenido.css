@@ -25,12 +25,12 @@ body {
 }
 
 .img_logo {
-    max-width: 30%;
-    padding-top: px;
+    max-width: 60%;
+    margin-top: 10%;
 }
 
 .bienvenido_img{
-    max-width: 50%;
+    max-width: 70%
 }
 
 p {
@@ -39,15 +39,6 @@ p {
     font-family: "Joy_For_Fun";
 }
 
-.welcome-text {
-    color: #87CEEB; /* Azul cielo */
-    text-shadow: 2px 2px 4px #000;
-    border: 2px solid #0000CD; /* Azul oscuro */
-    border-radius: 10px;
-    padding: 10px;
-    margin: 20px 0;
-    display: inline-block;
-}
 
 @keyframes wave {
     0%, 100% {
