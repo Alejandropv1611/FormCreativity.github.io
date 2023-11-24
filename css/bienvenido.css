@@ -20,14 +20,17 @@ body {
 
 .container {
     text-align: center;
-    margin: 50px auto;
-    padding: 20px;
+    margin: 20px auto;
     max-width: 600px;
 }
 
-img {
-    max-width: 100%;
-    padding-top: 20px;
+.img_logo {
+    max-width: 30%;
+    padding-top: px;
+}
+
+.bienvenido_img{
+    max-width: 50%;
 }
 
 p {
@@ -46,9 +49,6 @@ p {
     display: inline-block;
 }
 
-.flecha {
-    padding-top: 5vh;
-}
 @keyframes wave {
     0%, 100% {
         transform: translateY(0);
@@ -101,4 +101,5 @@ p {
         border-width: 15px 0 15px 20px;
         margin-top: 15px;
     }
+
 }

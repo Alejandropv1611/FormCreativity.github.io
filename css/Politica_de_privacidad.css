@@ -25,7 +25,7 @@ body {
     text-align: center;
     margin: 50px auto;
     padding: 20px;
-    max-width: 600px;
+    max-width: 950px;
     border-radius: 10px;
 }
 
@@ -42,13 +42,29 @@ h2 {
 }
 
 p {
-    text-align: left;
+    text-align: justify;
     margin-top: 20px;
     line-height: 20px;
     font-size: 18px;
     font-family: "Gotham_Book_Font";
+    line-height: 30px;
 }
 
+li {
+    font-family: "Gotham_Book_Font";
+    text-align: justify;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.lista_num {
+    font-family: "Gotham_Book_Font";
+    text-align: justify;
+    line-height: 30px;
+    font-size: 18px;
+    list-style-type: decimal;
+
+}
 button {
     background-color: #B22222; /* Rojo claro */
     color: #fff;

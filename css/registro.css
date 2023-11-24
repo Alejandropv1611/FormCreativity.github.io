@@ -22,25 +22,25 @@ body {
 
 .container {
     text-align: center;
-    margin: 50px auto;
+    margin: 10px auto;
     padding: 20px;
     max-width: 400px;
 }
 
 .logo {
-    max-width: 100%;
-    padding-bottom: 25px;
+    max-width: 70%;
+    padding-bottom: 5px;
 }
 
 .container p{
-    font-size: 38px;
+    font-size: 27px;
     margin: 5px;
     font-family: "Joy_For_Fun";
 }
 
 .form-container {
     text-align: center;
-    margin: 20px auto;
+    margin: 10px auto;
     padding: 20px;
     max-width: 325px;
     background-color: white;
@@ -176,5 +176,10 @@ input[type="checkbox"]{
 
     input {
         width: calc(100% - 16px);
+    }
+
+    .logo {
+        max-width: 40%;
+        padding-bottom: 5px;
     }
 }
