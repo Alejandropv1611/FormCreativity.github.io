@@ -1,49 +1,79 @@
-// Registro.js
 const form = document.getElementById('form-creativity');
+var contador = obtenerContador() || 0;
+var registrosCompletados = obtenerRegistrosCompletados() || 0;
 
-function generarNumeroAleatorio() {
-    // Generar un número aleatorio de 5 dígitos
-    return Math.floor(10000 + Math.random() * 90000);
+function obtenerContador() {
+    return parseInt(localStorage.getItem('contador'), 10);
+}
+
+function guardarContador() {
+    localStorage.setItem('contador', contador.toString());
+}
+
+function obtenerRegistrosCompletados() {
+    return parseInt(localStorage.getItem('registrosCompletados'), 10);
+}
+
+function guardarRegistrosCompletados() {
+    localStorage.setItem('registrosCompletados', registrosCompletados.toString());
+}
+
+function generarNumeroContador() {
+    // Incrementar el contador solo si se han completado 5 registros
+    if (contador > 0 && contador % 5 === 0) {
+        registrosCompletados++;
+        guardarRegistrosCompletados();
+        contador = 0;  // Reiniciar el contador para el próximo grupo de 5 registros
+    }
+
+    // Formatear el contador para que tenga dos dígitos (agregar un cero a la izquierda si es necesario)
+    var numero = contador < 10 ? '00' + contador : contador.toString();
+
+    // Concatenar el prefijo "MALL" y el número formateado
+    var resultado = "MS" + numero;
+
+    // Incrementar el contador para el siguiente registro
+    contador++;
+
+    // Guardar el contador actualizado en localStorage
+    guardarContador();
+
+    return resultado;
 }
 
 function validarFormulario(event) {
-    // Detener el envío del formulario por defecto
     event.preventDefault();
 
-    // Verificar si el checkbox de términos está marcado
     var checkbox = document.getElementById("acepto");
     if (!checkbox.checked) {
         alert("Debes aceptar los Términos y Condiciones para enviar el formulario.");
         return false;
     }
 
-    // Generar un número aleatorio de 5 dígitos
-    const numeroAleatorio = generarNumeroAleatorio();
+    const numeroAleatorio = generarNumeroContador();
 
-    // Añadir el número aleatorio al formulario
     const numeroAleatorioInput = document.createElement('input');
     numeroAleatorioInput.type = 'hidden';
     numeroAleatorioInput.name = 'codigo';
     numeroAleatorioInput.value = numeroAleatorio;
     form.appendChild(numeroAleatorioInput);
 
-    // Enviar el formulario a Google Apps Script
     fetch(form.action, {
         method: form.method,
         body: new FormData(form),
     })
     .then(response => response.json())
     .then(data => {
-        // Realizar la redirección después de validar el formulario
         window.location.href = `/Bienvenido.html?numero=${numeroAleatorio}`;
     })
     .catch(error => {
         console.error('Error al enviar el formulario:', error);
     });
 
-    // Asegúrate de que el formulario no se envíe de manera convencional
     return false;
+
 }
 
-// Agregar un evento al formulario para llamar a validarFormulario() en el evento submit
+
+
 form.addEventListener('submit', validarFormulario);

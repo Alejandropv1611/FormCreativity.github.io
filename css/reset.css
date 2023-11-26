@@ -1,0 +1,80 @@
+/* Estilos generales */
+@font-face {
+    font-family: "Joy_For_Fun";
+    src: url(/Fonts/joy_for_fun/Joy_For_Fun.otf);
+}
+
+@font-face {
+    font-family: "Providence_Sans_Regular";
+    src: url(/Fonts/Providence_Sans_Regular/Providence_Sans_Regular.ttf);
+}
+
+@font-face {
+    font-family: "Gotham_Book_Font";
+    src: url(/Fonts/Gotham_Book_Font.otf);
+}
+
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ECE31C;
+}
+
+.container {
+    text-align: center;
+    margin: 10px auto;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.logo {
+    max-width: 30%;
+    padding-bottom: 5px;
+    padding-bottom: 10%;
+}
+
+.container p{
+    font-size: 27px;
+    margin: 5px;
+    font-family: "Joy_For_Fun";
+}
+
+button {
+    display: block;
+    background-color: #B22222;
+    color: #ffffff;
+    padding: 50px 50px;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    font-family: "Joy_For_Fun";
+    font-size: 25px;
+
+}
+
+button:hover {
+    background-color: #8B0000; 
+}
+
+
+@media screen and (max-width: 800px) {
+    .container,
+    .form-container {
+        max-width: 100%;
+    }
+
+    input {
+        width: calc(100% - 16px);
+    }
+
+    .logo {
+        max-width: 40%;
+        padding-bottom: 5px;
+    }
+
+}
