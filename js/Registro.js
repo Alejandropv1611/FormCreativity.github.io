@@ -3,7 +3,7 @@ var contador = obtenerContador() || 0;
 var registrosCompletados = obtenerRegistrosCompletados() || 0;
 
 function obtenerContador() {
-    return parseInt(localStorage.getItem('contador'), 10);
+    return parseInt(localStorage.getItem('contador'), 10) || 0;
 }
 
 function guardarContador() {
@@ -11,7 +11,7 @@ function guardarContador() {
 }
 
 function obtenerRegistrosCompletados() {
-    return parseInt(localStorage.getItem('registrosCompletados'), 10);
+    return parseInt(localStorage.getItem('registrosCompletados'), 10) || 0;
 }
 
 function guardarRegistrosCompletados() {
@@ -26,13 +26,13 @@ function generarNumeroContador() {
         contador = 0;  // Reiniciar el contador para el próximo grupo de 5 registros
     }
 
-    // Formatear el contador para que tenga dos dígitos (agregar un cero a la izquierda si es necesario)
-    var numero = contador < 10 ? '00' + contador : contador.toString();
+    // Formatear el contador para que tenga tres dígitos
+    var numero = registrosCompletados < 10 ? '00' + registrosCompletados : registrosCompletados < 100 ? '0' + registrosCompletados : registrosCompletados.toString();
 
-    // Concatenar el prefijo "MALL" y el número formateado
+    // Concatenar el prefijo "MS" y el número formateado
     var resultado = "MS" + numero;
 
-    // Incrementar el contador para el siguiente registro
+    // Incrementar el contador para el siguiente registro dentro del grupo de 5
     contador++;
 
     // Guardar el contador actualizado en localStorage
@@ -71,9 +71,6 @@ function validarFormulario(event) {
     });
 
     return false;
-
 }
-
-
 
 form.addEventListener('submit', validarFormulario);
